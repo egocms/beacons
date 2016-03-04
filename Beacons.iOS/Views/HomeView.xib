@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
+            <connections>
+                <outlet property="SaleImageView" destination="A1Z-di-qdd" id="4vy-3q-Vjj"/>
+                <outlet property="SaleLabel" destination="2Yf-Fa-z1u" id="E5F-Fa-ApO"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A1Z-di-qdd">
+                    <rect key="frame" x="8" y="48" width="304" height="312"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="312" id="VRl-We-68Q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-Fa-z1u">
+                    <rect key="frame" x="8" y="390" width="304" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="HDJ-Jt-8bD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Yf-Fa-z1u" secondAttribute="bottom" constant="119" id="0Sk-5E-5VJ"/>
+                <constraint firstItem="2Yf-Fa-z1u" firstAttribute="trailing" secondItem="A1Z-di-qdd" secondAttribute="trailing" id="5ny-hF-WR7"/>
+                <constraint firstItem="A1Z-di-qdd" firstAttribute="top" secondItem="2" secondAttribute="top" constant="48" id="7No-5t-PaL"/>
+                <constraint firstItem="2Yf-Fa-z1u" firstAttribute="leading" secondItem="2" secondAttribute="leadingMargin" id="R5d-Wt-Qe3"/>
+                <constraint firstItem="A1Z-di-qdd" firstAttribute="trailing" secondItem="2" secondAttribute="trailingMargin" id="ZZc-f4-26c"/>
+                <constraint firstItem="A1Z-di-qdd" firstAttribute="leading" secondItem="2Yf-Fa-z1u" secondAttribute="leading" id="kDv-Xw-x3B"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="383" y="427"/>
+        </view>
+    </objects>
+</document>
